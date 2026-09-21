@@ -23,7 +23,7 @@ gate.addEventListener('keydown', event => {
   if (event.key === 'Enter' || event.key === ' ') openInvitation();
 });
 
-// Vista limpia para revisiÃ³n local automatizada; no afecta la experiencia normal.
+// Vista limpia para revisión local automatizada; no afecta la experiencia normal.
 if (new URLSearchParams(location.search).has('preview')) {
   gate.classList.add('is-gone');
   gate.setAttribute('aria-hidden', 'true');
@@ -64,10 +64,9 @@ document.querySelector('#rsvpForm').addEventListener('submit', event => {
 });
 
 document.querySelector('#addCalendar').addEventListener('click', () => {
-  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Invitacion//Boda//ES','BEGIN:VEVENT','UID:boda-eldar-elmira-20270828@example.local','DTSTAMP:20260921T120000Z','DTSTART:20270828T230000Z','DTEND:20270829T060000Z','SUMMARY:Boda de Eldar y Elmira','DESCRIPTION:CelebraciÃ³n de boda. UbicaciÃ³n por confirmar.','LOCATION:UbicaciÃ³n por confirmar','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Invitacion//Boda//ES','BEGIN:VEVENT','UID:boda-eldar-elmira-20270828@example.local','DTSTAMP:20260921T120000Z','DTSTART:20270828T230000Z','DTEND:20270829T060000Z','SUMMARY:Boda de Eldar y Elmira','DESCRIPTION:Celebración de boda. Ubicación por confirmar.','LOCATION:Ubicación por confirmar','END:VEVENT','END:VCALENDAR'].join('\r\n');
   const url = URL.createObjectURL(new Blob([ics], {type:'text/calendar'}));
   const link = Object.assign(document.createElement('a'), {href:url, download:'boda-eldar-elmira.ics'});
   link.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 });
-
