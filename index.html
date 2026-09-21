@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#061b17">
+  <meta name="description" content="InvitaciÃ³n de boda de Eldar y Elmira">
+  <title>Eldar & Elmira Â· Nuestra boda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="readability.css">
+</head>
+<body class="is-locked">
+  <a class="skip-link" href="#invitacion">Saltar a la invitaciÃ³n</a>
+
+  <div class="envelope-gate" id="portada" role="dialog" aria-modal="true" aria-labelledby="cover-title">
+    <div class="gate-glow" aria-hidden="true"></div>
+    <div class="envelope-scene">
+      <p class="prelude">Tenemos algo especial para ti</p>
+      <div class="envelope" id="envelope">
+        <div class="envelope-letter" aria-hidden="true">
+          <span>28 Â· 08 Â· 2027</span>
+          <strong>E <i>&</i> E</strong>
+        </div>
+        <div class="envelope-back"></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-pocket"></div>
+        <img class="envelope-blooms" src="assets/flores.png" alt="">
+        <button class="wax-seal" id="openInvitation" type="button" aria-label="Abrir la invitaciÃ³n">
+          <span>E<br><small>&</small><br>E</span>
+        </button>
+      </div>
+      <h1 id="cover-title">Eldar <span>&</span> Elmira</h1>
+      <button class="open-copy" id="openCopy" type="button">Toca el sello para abrir</button>
+    </div>
+  </div>
+
+  <div class="poster" id="invitacion" aria-hidden="true">
+    <header class="hero">
+      <img src="assets/pareja-hero.jpg" alt="Pareja de novios abrazada frente a una hacienda" width="1024" height="1280">
+      <div class="hero-shade"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Junto a nuestras familias</p>
+        <p class="date-small">28 Â· AGOSTO Â· 2027</p>
+        <h2>Eldar <em>&</em><br>Elmira</h2>
+        <p class="hero-script">nos casamos</p>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="floral-bridge floral-hero" aria-hidden="true">
+        <img src="assets/flores.png" alt="">
+      </div>
+
+      <section class="intro dark-scene" aria-labelledby="intro-title">
+        <div class="copy-narrow reveal">
+          <p class="ornament">â¦</p>
+          <h2 id="intro-title">Â¡Queridos familiares y amigos!</h2>
+          <p>Nos complace invitarlos a compartir con nosotros uno de los dÃ­as mÃ¡s importantes de nuestra vida.</p>
+          <p>SerÃ¡ una celebraciÃ³n Ã­ntima, llena de amor, mÃºsica y momentos que deseamos guardar para siempre.</p>
+          <time datetime="2027-08-28">28.08.2027</time>
+          <p class="micro">La felicidad serÃ¡ completa al vivirla junto a ustedes.</p>
+        </div>
+        <div class="countdown reveal" aria-label="Cuenta regresiva para la boda">
+          <p>Faltan</p>
+          <div><strong id="days">000</strong><span>dÃ­as</span><b>Â·</b><strong id="hours">00</strong><span>hrs</span><b>Â·</b><strong id="minutes">00</strong><span>min</span><b>Â·</b><strong id="seconds">00</strong><span>seg</span></div>
+        </div>
+      </section>
+
+      <section class="timeline paper-scene" aria-labelledby="timeline-title">
+        <img class="sprig sprig-left" src="assets/flores.png" alt="" aria-hidden="true">
+        <img class="sprig sprig-right" src="assets/flores.png" alt="" aria-hidden="true">
+        <div class="reveal">
+          <p class="script-label">SÃ¡bado</p>
+          <h2 id="timeline-title">Programa del dÃ­a</h2>
+        </div>
+        <ol class="schedule">
+          <li class="reveal"><time>17:00</time><h3>Ceremonia</h3><p>Nos encontraremos para acompaÃ±ar nuestros votos y el comienzo de esta historia.</p></li>
+          <li class="reveal"><time>18:30</time><h3>FotografÃ­as</h3><p>Brindaremos y guardaremos en imÃ¡genes la alegrÃ­a de este momento.</p></li>
+          <li class="reveal"><time>20:00</time><h3>Cena</h3><p>Una mesa compartida, buena conversaciÃ³n y nuestros sabores favoritos.</p></li>
+          <li class="reveal"><time>21:30</time><h3>Inicio del baile</h3><p>La mÃºsica nos reunirÃ¡ en la pista. Queremos celebrar toda la noche con ustedes.</p></li>
+          <li class="reveal"><time>00:00</time><h3>Despedida</h3><p>El cierre de una noche que vivirÃ¡ siempre en nuestra memoria.</p></li>
+        </ol>
+      </section>
+
+      <section class="dress-scene dark-scene" aria-labelledby="dress-title">
+        <div class="dress-photo"><img src="assets/recepcion.jpg" alt="RecepciÃ³n nocturna con mesas, flores y sillas verde esmeralda" width="1536" height="1024"></div>
+        <div class="dress-copy reveal">
+          <h2 id="dress-title">Dress code</h2>
+          <p class="script-label">Etiqueta formal</p>
+          <p>Nos encantarÃ¡ verlos elegantes. Los tonos marfil quedan reservados para la novia.</p>
+          <div class="swatches" aria-label="Paleta sugerida">
+            <span style="--swatch:#020b09"></span><span style="--swatch:#d8d3c5"></span><span style="--swatch:#f3eee2"></span><span style="--swatch:#184b40"></span><span style="--swatch:#071e19"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-scene dark-scene" aria-labelledby="location-title">
+        <div class="location-copy reveal">
+          <h2 id="location-title">Location</h2>
+          <p class="script-label">Lugar por confirmar</p>
+          <p>La direcciÃ³n definitiva se compartirÃ¡ con los invitados.</p>
+          <button class="text-link is-disabled" type="button" disabled>Ver ubicaciÃ³n</button>
+        </div>
+        <img class="venue" src="assets/hacienda.jpg" alt="Hacienda iluminada de noche con jardÃ­n y fuente central" width="1792" height="1024">
+      </section>
+
+      <section class="details paper-scene" aria-labelledby="details-title">
+        <div class="copy-narrow reveal">
+          <h2 id="details-title">Details</h2>
+          <p class="script-label">Con cariÃ±o</p>
+          <p>Si desean hacernos un obsequio, su presencia es lo mÃ¡s importante. Para quienes lo prefieran, tendremos una lluvia de sobres durante la celebraciÃ³n.</p>
+          <p>Para ayudarnos a preparar cada detalle, agradeceremos confirmar su asistencia antes del 10 de agosto.</p>
+          <button class="calendar-link" id="addCalendar" type="button">Guardar la fecha</button>
+        </div>
+      </section>
+
+      <div class="floral-bridge floral-footer" aria-hidden="true"><img src="assets/flores.png" alt=""></div>
+
+      <section class="rsvp dark-scene" aria-labelledby="rsvp-title">
+        <div class="reveal">
+          <h2 id="rsvp-title">Questionnaire</h2>
+          <p class="script-label">Â¿Nos acompaÃ±as?</p>
+          <time datetime="2027-08-28T17:00:00-06:00">28.08.2027<br>17:00</time>
+          <p>Confirma por WhatsApp. El mensaje se abrirÃ¡ listo para enviar; no guardamos tus datos en esta pÃ¡gina.</p>
+        </div>
+        <form id="rsvpForm" class="rsvp-form reveal">
+          <label for="guestName">Tu nombre</label>
+          <input id="guestName" name="name" autocomplete="name" required placeholder="Nombre y apellido">
+          <label for="attendance">Asistencia</label>
+          <select id="attendance" name="attendance"><option value="SÃ­, asistirÃ©">SÃ­, asistirÃ©</option><option value="No podrÃ© asistir">No podrÃ© asistir</option></select>
+          <button type="submit">Confirmar por WhatsApp</button>
+        </form>
+        <p class="farewell reveal">Â¡Los esperamos!</p>
+        <p class="monogram" aria-label="E y E">E <i>&</i> E</p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
