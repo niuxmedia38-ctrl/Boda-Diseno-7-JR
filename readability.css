@@ -1,4 +1,4 @@
-/* Ajustes finales de lectura mÃ³vil, separados para mantener intacta la direcciÃ³n artÃ­stica. */
+/* Ajustes finales de lectura móvil, separados para mantener intacta la dirección artística. */
 .intro p,
 .details p,
 .rsvp p,
@@ -18,7 +18,7 @@
   .schedule p { font-size: .88rem; }
 }
 
-/* El tarjetÃ³n permanece totalmente oculto mientras el sobre estÃ¡ cerrado. */
+/* El tarjetón permanece totalmente oculto mientras el sobre está cerrado. */
 .envelope-letter {
   opacity: 0;
   transition: transform 1.05s .28s var(--ease), opacity .2s .28s linear;
@@ -37,4 +37,3 @@
   font-size: clamp(1.7rem, 7.5vw, 2.7rem);
   padding-inline: 12px;
 }
-
